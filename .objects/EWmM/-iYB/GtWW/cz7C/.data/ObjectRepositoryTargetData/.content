@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FJz_qFwjYEShikGXgxGXTw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79882" DesignTimeRectangle="334, 261, 270, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl id='OrderNumberDisplay' tag='SPAN' aaname='SO-00021620' innertext='SO-00021620' /&gt;" Guid="fd9993ee-ce6e-4de0-b2be-a4f7b6600f3b" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021620' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="6129e1cabb5b5c5d3bd58f561529dcba.png" xmlns="">0G5dE8lhA7EO0cO1FTalXBg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

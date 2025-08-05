@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qbLkpYr77E2f_s1AacUXKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="334, 840, 375, 42" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl id='ProductAddLine' tableRow='4' tag='INPUT' /&gt;" Guid="5a0edaf7-5742-4120-b8fc-0ebbb91678fe" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="b246b3ac603caf60a094a8e9b8b6a343.png" xmlns="">0MKcwwgq_AUa5ZV-ZgrcErQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

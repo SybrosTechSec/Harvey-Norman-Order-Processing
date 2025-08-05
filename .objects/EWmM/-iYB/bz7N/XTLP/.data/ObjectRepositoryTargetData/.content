@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Rdx6hCOLYEugXeLLI1sSYw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" CVScreenId="8064bea2-e026-4aa7-a54b-2aa03f2068a5" DesignTimeRectangle="676, 566, 83, 35" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='frmIntrayList' tableRow='3' tag='TABLE' /&gt;&lt;webctrl id='cmdSearch' tableRow='8' tag='INPUT' aaname='Search' /&gt;" Guid="cb16d3b8-c5e5-48b9-bcc2-3795deb94fec" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Document In Tray' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="551f936aca88a74665b0650bf81a82db.png" xmlns="">0TsiGcLfMXkC4OCMA_9rZKg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

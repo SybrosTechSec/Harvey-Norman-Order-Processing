@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ePy9EM3kEkmwoWZ4eG8MWA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/Forms/MXC_PO_View.aspx" DesignTimeRectangle="399, 494, 1208, 34" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='layoutTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='billToTextBox' type='text' tag='INPUT' class='appnote' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8af6636a-6b32-4c55-b02b-6ae5b3440585" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="322, 493, 76, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='layoutTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl class='appquestion' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='                     Bill To:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='                     Bill To:' visibleinnertext='Bill To:' check:innerText='Bill To:' /&gt;" Guid="a42aac94-3743-4c08-8255-d209ba6c20db" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4d972e56e0566e421577c767994076d8.png" xmlns="">0TvLrSJSiBE2QR4DaFSsjCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

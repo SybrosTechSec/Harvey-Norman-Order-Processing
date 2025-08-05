@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TPUElRgCv0Cj7ngSrTqKvQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/Forms/MXC_ASN_BK.aspx" DesignTimeRectangle="644, 608, 176, 38" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='layoutTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='INPUT' class='appnote' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='appnote' /&gt;" Guid="5a36c6fc-c021-487f-b307-fb64a8d9b1df" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="322, 607, 321, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='layoutTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='TD' class='appquestion' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='                         Dispatch Number:                     ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='wrapper' check:innerText='Dispatch Number:' /&gt;" Guid="bfb2bc4d-f873-42b1-963e-b2eac3589ef0" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="12a8ea661258c59e91bc1c8daac775f8.png" xmlns="">08-HcqknUnkeXya9PcbWvYA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

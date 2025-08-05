@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x8EIKBULvEanb6XYfCNRrA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1790, 715, 81, 42" ElementType="Text" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' aaname='Add' innertext='Add' /&gt;" Guid="5d88dadd-8176-4654-8a82-f79ed06a35ce" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="5d39e11ccb1a63078cd525a987f31786.png" xmlns="">01HcXj0w4O0yKrSJTPzaElw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT EstimatedDispatch…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "kwc9hzKe5US3fshvuqzKlg",
+  "Reference": "PdiOAAhUeUqdSo4-bRBEIg/kwc9hzKe5US3fshvuqzKlg",
+  "ParentRef": "PdiOAAhUeUqdSo4-bRBEIg/gP9wlmWXP0ekUFUkwOSNZA",
+  "Created": "2025-08-01T13:13:58.537656Z",
+  "Updated": "2025-08-01T13:13:58.537656Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

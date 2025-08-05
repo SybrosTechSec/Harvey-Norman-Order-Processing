@@ -1,0 +1,14 @@
+﻿{
+  "Name": "No Consignments were fo…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "tLaDivSN-0uyE6Dn9Y9F3Q",
+  "Reference": "PdiOAAhUeUqdSo4-bRBEIg/tLaDivSN-0uyE6Dn9Y9F3Q",
+  "ParentRef": "PdiOAAhUeUqdSo4-bRBEIg/qqy69-h3NE-N4o28SdTiVQ",
+  "Created": "2025-08-04T12:45:55.4562995Z",
+  "Updated": "2025-08-04T12:45:55.4562995Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

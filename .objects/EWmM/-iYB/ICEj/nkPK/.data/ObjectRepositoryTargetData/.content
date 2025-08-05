@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tko_uqC_N0q7Qbcs7huUxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79875" DesignTimeRectangle="639, 358, 275, 55" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Add Sales Order' tag='A' innertext='Add Sales Order' /&gt;" Guid="3e822744-e3ac-4e70-aba2-522e78ebb677" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021613' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="200d4a830bfbd637ff3f03771186cb9d.png" xmlns="">0C-SaBl44t0S03JEiwskiWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

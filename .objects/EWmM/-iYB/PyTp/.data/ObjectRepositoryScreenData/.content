@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="6UtqsTFaoEODPl6QKukj1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" Selector="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Turn around Document' /&gt;" Url="harveynorman.messagexchange.com/Forms/Turnaround.aspx" />
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

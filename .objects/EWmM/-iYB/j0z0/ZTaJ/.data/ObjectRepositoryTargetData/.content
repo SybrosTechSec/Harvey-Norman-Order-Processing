@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7ckb-1nLAUWPl5iiBSbRCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/Forms/MXC_ASN_BK.aspx" DesignTimeRectangle="644, 649, 176, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='layoutTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='INPUT' class='appnote' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='appnote' /&gt;" Guid="daa445a3-8767-4879-a171-e28ab3ff12b9" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="322, 647, 321, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='layoutTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl class='appquestion' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='                         Carrier Name:                     ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='wrapper' check:innerText='Carrier Name:' /&gt;" Guid="33469bf0-e985-4304-8c58-93e2d448c6da" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="daa2f79e70bb3653f457b37be8edc6a3.png" xmlns="">0Hhag5xAyeEGyGUqGc1EMgw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

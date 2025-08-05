@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DD7h4mJCgUumdvpbro6gRA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="live.machship.com" DesignTimeRectangle="98, 585, 1799, 117" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' parentclass='col-xs-12' /&gt;" Guid="226dae35-1eb8-42ba-a555-60f60ffed176" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MachShip - Consignment Search' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="af27df8631ae8768819cf3453f3794e4.png" xmlns="">06nDhkOkXDkWoeGPXC5UYtg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

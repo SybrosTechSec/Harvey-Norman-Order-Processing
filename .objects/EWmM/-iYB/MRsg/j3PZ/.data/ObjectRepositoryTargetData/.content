@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="molJ0oKwu0SaHGf4AcaVvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="385, 463, 176, 19" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='Harvey Norman - Forms - Document In Tray' role='document' /&gt;&lt;ctrl idx='2' role='row' /&gt;&lt;ctrl name='Document In Tray From: 2025-06-21 To: 2025-07-25 Partner: Harvey*' role='cell' /&gt;&lt;ctrl idx='5' role='row' /&gt;&lt;ctrl role='combo box' /&gt;" Guid="445654f4-35d4-4ec4-b846-646666ad5d9c" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" SelectionStrategy="AA" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3c0a0636239ed981e4b577a31cdc8857.png" xmlns="">0gab19b5dlECgOK94NeyNVg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
