@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MzWpXolAtkGZRseNaUIyEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="757, 840, 100, 42" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='addLineTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl id='QtyAddLine' matching:id='fuzzy' fuzzylevel:id='0.0' type='text' tag='INPUT' class='short number' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9699be24-1bc5-4a7b-9b86-ef4e985030ac" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="717, 848, 25, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='ProductSearchButton' type='' tag='A' class='btnSearchIcon' aaname='Search' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="4c9e564a-ee09-46b7-bc07-b26293a76263" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="74384d9d9c83f43ba9d6a939f975fbdf.png" xmlns="">0LQvvy1pRZ0e06dpWhOOgPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

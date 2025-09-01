@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xS2Ul7OwckunIAe6ZgF9Sw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79875" DesignTimeRectangle="904, 245, 30, 30" FullSelectorArgument="&lt;webctrl parentid='shortcuts' tag='I' /&gt;" Guid="2012ab89-7c79-4a92-88bd-efaa3c0421fb" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021613' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="e04178042d2782161a58ca4aadb10ebc.png" xmlns="">0vbS_swSie0WIK3cyUtyr1Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

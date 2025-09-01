@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Carrier Name",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "ZTaJAmpgFUuoJyPAWwSORw",
+  "Reference": "PdiOAAhUeUqdSo4-bRBEIg/ZTaJAmpgFUuoJyPAWwSORw",
+  "ParentRef": "PdiOAAhUeUqdSo4-bRBEIg/j0z0xcrlvE6khiO-NZ-KIQ",
+  "Created": "2025-08-04T14:44:07.7620643Z",
+  "Updated": "2025-08-04T14:44:07.7620643Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

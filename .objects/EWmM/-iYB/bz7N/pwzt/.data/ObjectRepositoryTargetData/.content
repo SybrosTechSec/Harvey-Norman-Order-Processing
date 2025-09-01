@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YAboAc8asEqms_B53iRWHA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" CVScreenId="4f0ee287-712b-41ce-bd93-fe34669dc310" CvElementArea="332, 859, 19, 20" CvType="CheckBox" DesignTimeRectangle="335, 861, 16, 16" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='docList' tableRow='3' tag='TABLE' /&gt;&lt;webctrl id='SelectionCheckBox' tableRow='1' tag='INPUT' /&gt;" Guid="90fe1035-5dc0-41b3-a97f-ba6bdfcf5465" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Document In Tray' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4f0ee287-712b-41ce-bd93-fe34669dc310" CvTextArea="379, 861, 31, 17" CvTextArgument="Dir" CvType="Text" DesignTimeRectangle="371, 846, 48, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='docList' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='tableheading' aaname='Dir' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Dir' /&gt;" Guid="74b66091-249c-4bf2-b2e8-474ce90b6cea" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fcdb0ee1ea8c6776e9826ddfe31e94cc.png" xmlns="">0cpNbMmTxfEuMWTEKjS2eow</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

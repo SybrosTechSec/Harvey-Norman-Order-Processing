@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hL3JNCKVKUONV4ui7FSPGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/Forms/MXC_POR_BK.aspx" DesignTimeRectangle="536, 511, 212, 38" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='layoutTable' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' class='hasDatepicker' parentclass='appquestion' /&gt;" Guid="8aba8f71-2fd8-44da-8e06-f0ea8682b301" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="0da4f5e6ff2a5ca9b1572eb337065821.png" xmlns="">0O3y6G0lJFkKgQPJm_jdB8A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

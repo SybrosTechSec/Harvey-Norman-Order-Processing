@@ -1,0 +1,14 @@
+﻿{
+  "Name": "editable text Console p…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "GeGR5D94pES3ym8hPwhemA",
+  "Reference": "PdiOAAhUeUqdSo4-bRBEIg/GeGR5D94pES3ym8hPwhemA",
+  "ParentRef": "PdiOAAhUeUqdSo4-bRBEIg/iHYYTDNqmEO71u0IESAS0Q",
+  "Created": "2025-07-31T15:52:39.2994402Z",
+  "Updated": "2025-07-31T15:52:39.2994402Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

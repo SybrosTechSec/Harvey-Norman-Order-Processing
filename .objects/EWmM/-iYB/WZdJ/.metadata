@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Add Sales Order",
+  "Type": "Screen",
+  "Id": "WZdJP33LGkGdWc6fXZIuaQ",
+  "Reference": "PdiOAAhUeUqdSo4-bRBEIg/WZdJP33LGkGdWc6fXZIuaQ",
+  "ParentRef": "PdiOAAhUeUqdSo4-bRBEIg/-iYBPFgsxU6tbh64pfNtEg",
+  "Created": "2025-08-01T13:59:17.8993166Z",
+  "Updated": "2025-08-01T13:59:17.8993166Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

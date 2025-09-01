@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Dispatch Number",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "h3PvDVH1bk-WD7F6UlkyEw",
+  "Reference": "PdiOAAhUeUqdSo4-bRBEIg/h3PvDVH1bk-WD7F6UlkyEw",
+  "ParentRef": "PdiOAAhUeUqdSo4-bRBEIg/j0z0xcrlvE6khiO-NZ-KIQ",
+  "Created": "2025-08-04T14:40:40.6331641Z",
+  "Updated": "2025-08-04T14:40:40.6331641Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

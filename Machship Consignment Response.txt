@@ -1,0 +1,10 @@
+{
+  "object": null,
+  "errors": [
+    {
+      "validationType": "Error",
+      "memberNames": [],
+      "errorMessage": "No Consignments were found"
+    }
+  ]
+}

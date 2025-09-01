@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="G0VXWzNtoEC33Ibvz7Z3mw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update" DesignTimeRectangle="496, 409, 225, 42" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='SelectedCustomerCode' type='text' tag='INPUT' class='ui-autocomplete-input' aaname='*Customer Code' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="06975b57-fc08-4a75-b489-b861ff98953f" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Add Sales Order' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="362, 421, 119, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='A' class='' aaname='*Customer Code' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' check:innerText='*Customer Code' /&gt;" Guid="8f3959a6-de59-4429-8454-32e0f33b8ed2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1740c4f169425eda3f9d69898777c913.png" xmlns="">0PmnkQmzJKkqG83p1rLRSxQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

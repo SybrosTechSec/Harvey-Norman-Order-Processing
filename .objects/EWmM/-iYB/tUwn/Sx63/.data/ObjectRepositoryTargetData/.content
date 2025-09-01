@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6e1mEktnik6y8ycQJWO_0w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1551, 409, 225, 42" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='SalesPersonSelection' type='' tag='SELECT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2e7ee0b6-266d-4da0-a48f-78b183df302c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1441, 419, 95, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Sales Person' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sales Person' /&gt;" Guid="d1b699c4-f598-4c0c-881c-def2f651c270" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7389cae31eae91ea23669e1192a071ea.png" xmlns="">0k7ihAWGMW0eKOLNTZwdQcw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

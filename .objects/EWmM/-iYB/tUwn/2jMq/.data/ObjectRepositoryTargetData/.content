@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2pT0XEUcX0mWb7jOIJl6kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1551, 409, 225, 42" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='SELECT' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext=' Alyza Bongcales: alyza@digitaldoorlocks.com.au Gina Sajorda: gina@digitaldoorlocks.com.au Julie Llaneta: julie@digitaldoorlocks.com.au Kenneth Peralta: kenneth.peralta@digitaldoorlocks.com.au Marianne  Panis: marianne@digitaldoorlocks.com.au Mary  Feliciano: mary.feliciano@digitaldoorlocks.com.au Matthew Ian: matthew.ian@digitaldoorlocks.com.au MJ Calumpiano: marjurey@digitaldoorlocks.com.au Recelyn Maralit: recelyn@digitaldoorlocks.com.au Rey Ann Gerona: ann.gerona@digitaldoorlock.com.au Sam Karadaky: sam*' parentclass='style-select' /&gt;" Guid="18f4db2c-d090-443c-8cfa-3f58d50d57c3" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1441, 419, 95, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='Sales Person' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sales Person' /&gt;" Guid="9be68c6c-0554-4078-9f7f-e4163fc6e28f" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="363fbd0906b90fb752f030628d0230a0.png" xmlns="">0DQCDx1Xdjk292fz7EvyDCQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

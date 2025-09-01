@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YI1hfPD_d0KHX4aToSVBNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/Forms/MXC_POR_BK.aspx" DesignTimeRectangle="1036, 247, 90, 49" ElementType="Button" FullSelectorArgument="&lt;ctrl name='harveynorman.messagexchange.com says' role='dialog' text='harveynorman.messagexchange.com says' /&gt;&lt;ctrl name='OK' role='push button' text='OK' /&gt;" Guid="3c8d049d-2c76-4ff9-a43b-e1c168863cb4" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Forms Input - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="f14a0a6f4aab06ab147f8dbee3ad09f5.png" xmlns="">0CaR7AwTi90iayVvdVSmYGg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

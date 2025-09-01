@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WW-2FzAMRkCS9BXpHb0JmQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="34, 976, 1868, 31" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Console panel' role='property page' /&gt;&lt;ctrl name='console' role='grouping' /&gt;&lt;ctrl name='Console prompt' role='editable text' /&gt;" Guid="5493da56-1023-4361-ab1b-6ad2d43445bd" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a4eb461a99830aa107d7a5cb4da56be0.png" xmlns="">0EqgwnKHkw02YFU31eAy1mg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

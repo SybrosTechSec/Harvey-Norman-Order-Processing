@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="D3TBoXAliUaCGt7xmycY2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/Forms/Turnaround.aspx" DesignTimeRectangle="714, 669, 52, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl id='PayloadTable' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' aaname='Create' /&gt;" Guid="78ffe695-1de1-450b-bbbf-45d6688840be" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Turn around Document' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="83b21d36c7bfed5544b3c68725a13b16.png" xmlns="">0YD06T3aTFUyNb3voLWoO_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
