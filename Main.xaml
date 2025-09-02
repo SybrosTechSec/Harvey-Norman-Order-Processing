@@ -145,7 +145,7 @@
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1103,10164" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1103,7095" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ProjectPath" />
       <Variable x:TypeArguments="sd:DataTable" Name="UnleashedProducts" />
@@ -189,13 +189,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:KillProcess>
-    <uix:NApplicationCard CloseMode="Never" DisplayName="Harvey Norman" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="828,9537" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="7a423d07-d1d9-432d-a9bb-5c8197652ca2" WindowResize="Maximize">
+    <uix:NApplicationCard CloseMode="Never" DisplayName="Harvey Norman" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="828,6466" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="7a423d07-d1d9-432d-a9bb-5c8197652ca2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="794,9287" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="794,6216" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="DT_HarveyData" />
               <Variable x:TypeArguments="x:Boolean" Name="Retry" />
@@ -420,7 +420,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NExtractData>
-            <If Condition="[DT_Check.RowCount&gt;1]" sap:VirtualizedContainerService.HintSize="760,8636" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[DT_Check.RowCount&gt;1]" sap:VirtualizedContainerService.HintSize="760,5565" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -428,7 +428,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="758,8276" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="758,5205" sap2010:WorkflowViewState.IdRef="Sequence_59">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Name="DT_Unique_PO" />
                   </Sequence.Variables>
@@ -619,13 +619,13 @@
                       </scg:List>
                     </ui:MultipleAssign.AssignOperations>
                   </ui:MultipleAssign>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Unique_PO]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="724,7611" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Unique_PO]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="724,4540" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="722,7438" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="722,4367" sap2010:WorkflowViewState.IdRef="Sequence_21">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="PO_Number" />
                           </Sequence.Variables>
@@ -775,7 +775,7 @@
                               </Sequence>
                             </TryCatch.Finally>
                           </TryCatch>
-                          <Sequence DisplayName="Unleashed Sequence" sap:VirtualizedContainerService.HintSize="688,6418" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                          <Sequence DisplayName="Unleashed Sequence" sap:VirtualizedContainerService.HintSize="688,3347" sap2010:WorkflowViewState.IdRef="Sequence_28">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="CustomerRef" />
                               <Variable x:TypeArguments="x:String" Name="Address" />
@@ -905,13 +905,13 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MultipleAssign>
-                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Add Sales Order(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="654,5424" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V2">
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Add Sales Order(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="654,2353" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V2">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="620,5183" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="620,2112" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="SO_Number" />
                                       <Variable x:TypeArguments="x:Boolean" Name="FileExists" />
@@ -1188,7 +1188,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[UnleashedProducts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,3160" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[UnleashedProducts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,3128" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
@@ -1232,7 +1232,7 @@
                                                 </scg:List>
                                               </ui:MultipleAssign.AssignOperations>
                                             </ui:MultipleAssign>
-                                            <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-Black&quot;)]" DisplayName="If DDL709" sap:VirtualizedContainerService.HintSize="550,2401" sap2010:WorkflowViewState.IdRef="If_4">
+                                            <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-BLACK&quot;)]" DisplayName="If DDL709" sap:VirtualizedContainerService.HintSize="550,2401" sap2010:WorkflowViewState.IdRef="If_4">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1398,7 +1398,7 @@
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-Copper&quot;)]" sap:VirtualizedContainerService.HintSize="514,1211" sap2010:WorkflowViewState.IdRef="If_7">
+                                                  <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-COPPER&quot;)]" sap:VirtualizedContainerService.HintSize="514,1211" sap2010:WorkflowViewState.IdRef="If_7">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1982,13 +1982,13 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="696,228" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="758,228" sap2010:WorkflowViewState.IdRef="Sequence_60">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="662,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;No Reference Numbers With &quot;&quot;New&quot;&quot; Status Available&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="724,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;No Reference Numbers With &quot;&quot;New&quot;&quot; Status Available&quot;]" />
                 </Sequence>
               </If.Else>
             </If>
@@ -2005,8 +2005,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="587.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Starting Add ASN Workflow&quot;]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ADD ASN - Invoke Workflow File (ADD ASN.xaml)" sap:VirtualizedContainerService.HintSize="587.2,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ADD ASN.xaml">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="828,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Starting Add ASN Workflow&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ADD ASN - Invoke Workflow File (ADD ASN.xaml)" sap:VirtualizedContainerService.HintSize="828,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ADD ASN.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
