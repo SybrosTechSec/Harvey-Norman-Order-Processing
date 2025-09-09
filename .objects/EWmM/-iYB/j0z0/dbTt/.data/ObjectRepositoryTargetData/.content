@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="z9euA0VxjUKtYFXB0QU7hQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="harveynorman.messagexchange.com/Forms/MXC_POR_BK.aspx" DesignTimeRectangle="554, 756, 41, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='ui-datepicker-div' tag='TABLE' /&gt;&lt;webctrl aaname='15' class='ui-state-default' /&gt;" Guid="83ae9239-fef7-48a4-a1bf-d6ca7ee0130f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="24a1358e086c348b97c2f37510ca3527.png" xmlns="">0vQ-7HpL6J0aMM-OR5cAXag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
