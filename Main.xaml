@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umafe="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umafm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umafe="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umafm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -64,6 +64,9 @@
       <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
       <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
       <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -145,7 +148,7 @@
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1985,11850" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1633,5814" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ProjectPath" />
       <Variable x:TypeArguments="sd:DataTable" Name="UnleashedProducts" />
@@ -164,8 +167,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[DT_Processed]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="828,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Reference_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SO_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:GetEnvironmentVariable DisplayName="Get Environment Variable" sap:VirtualizedContainerService.HintSize="828,57" sap2010:WorkflowViewState.IdRef="GetEnvironmentVariable_1" Variable="CurrentDirectory" VariableValue="[ProjectPath]">
+    <ui:BuildDataTable DataTable="[DT_Processed]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="653,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Reference_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SO_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:GetEnvironmentVariable DisplayName="Get Environment Variable" sap:VirtualizedContainerService.HintSize="653,57" sap2010:WorkflowViewState.IdRef="GetEnvironmentVariable_1" Variable="CurrentDirectory" VariableValue="[ProjectPath]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -173,7 +176,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetEnvironmentVariable>
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="828,57" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[Path.Combine(ProjectPath,&quot;Data&quot;)]">
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="653,57" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[Path.Combine(ProjectPath,&quot;Data&quot;)]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -181,7 +184,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CreateDirectory>
-    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="828,57" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="653,57" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -189,13 +192,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:KillProcess>
-    <uix:NApplicationCard CloseMode="Never" DisplayName="Harvey Norman" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="828,11044" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="7a423d07-d1d9-432d-a9bb-5c8197652ca2" WindowResize="Maximize">
+    <uix:NApplicationCard CloseMode="Never" DisplayName="Harvey Norman" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="653,4998" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="7a423d07-d1d9-432d-a9bb-5c8197652ca2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="794,10794" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="619,4744" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="DT_HarveyData" />
               <Variable x:TypeArguments="x:Boolean" Name="Retry" />
@@ -209,43 +212,33 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Log in'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="760,1131" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Timeout="10" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Log in'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Timeout="10" Version="V5">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,780" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,767" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT UserLogon'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="AUSP300787-1" Version="V5">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT UserLogon'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,259" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="AUSP300787-1" Version="V5">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com" DesignTimeRectangle="1011, 543, 399, 59" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='FLDUserLogon' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='UserLogon' tableRow='2' tag='INPUT' aaname='User ID' /&gt;" Guid="15540082-1053-4a5d-8271-155de8d18dc6" ImageBase64="" InformativeScreenshot="6a16cb645411526a6c1ad787b7b482b9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Home' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT UserPassword'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,251" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="B%8jiyD^5PRGf4JI" Version="V5">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT UserPassword'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,259" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="fdlniwN4NMO3@4XU" Version="V5">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com" DesignTimeRectangle="1011, 650, 399, 59" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='FLDUserLogon' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='UserPassword' tableRow='4' tag='INPUT' aaname='Password' /&gt;" Guid="389e9996-a7f0-4ba1-a089-9be01c83708f" ImageBase64="" InformativeScreenshot="4be68193535ea4c5696ef0d2fcc66b87.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Home' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com" DesignTimeRectangle="1011, 748, 397, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='FLDUserLogon' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='LogonForm' tableRow='7' tag='INPUT' aaname='Log in' /&gt;" Guid="946d92e2-03a7-4058-bbe6-67a7b39f14b4" InformativeScreenshot="1980a112365963ce38e8702a04382c05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Home' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
-                    <uix:NClick.VerifyOptions>
-                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                        <uix:VerifyExecutionOptions.Retry>
-                          <InArgument x:TypeArguments="x:Boolean" />
-                        </uix:VerifyExecutionOptions.Retry>
-                        <uix:VerifyExecutionOptions.Timeout>
-                          <InArgument x:TypeArguments="x:Double" />
-                        </uix:VerifyExecutionOptions.Timeout>
-                      </uix:VerifyExecutionOptions>
-                    </uix:NClick.VerifyOptions>
                   </uix:NClick>
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -258,12 +251,12 @@
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NGoToUrl DelayBefore="5" DisplayName="Go To URL - messagexchange.com" sap:VirtualizedContainerService.HintSize="760,57" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Url="https://harveynorman.messagexchange.com/forms/IntrayList.aspx?D=I&amp;defaulttp=1" Version="V5">
+            <uix:NGoToUrl DelayBefore="5" DisplayName="Go To URL - messagexchange.com" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Url="https://harveynorman.messagexchange.com/forms/IntrayList.aspx?D=I&amp;defaulttp=1" Version="V5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -271,7 +264,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NGoToUrl>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Status'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="760,57" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Status'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" CVScreenId="e6077a6c-90fd-4c7c-b962-86abf9adad4a" CvElementArea="478, 508, 223, 26" CvType="InputBox" DesignTimeRectangle="478, 508, 223, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" Guid="5e62330b-fc90-4140-9d0e-82c3c28faf97" InformativeScreenshot="af158ac698c45ea673738c190c313f55.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -288,7 +281,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="760,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="SameAsCard" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V5">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="SameAsCard" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -296,7 +289,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="760,57" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -347,7 +340,7 @@
                 </Sequence>
               </TryCatch.Finally>
             </TryCatch>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into Search Command" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="760,57" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="document.getElementById('cmdSearch').click();[k(Tab)][k(Enter)]" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into Search Command" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="document.getElementById('cmdSearch').click();[k(Tab)][k(Enter)]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="34, 976, 1868, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Console panel' role='property page' /&gt;&lt;ctrl name='console' role='grouping' /&gt;&lt;ctrl name='Console prompt' role='editable text' /&gt;" Guid="5493da56-1023-4361-ab1b-6ad2d43445bd" InformativeScreenshot="a4eb461a99830aa107d7a5cb4da56be0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NTypeInto.Target>
@@ -358,7 +351,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="760,57" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="585,61" sap2010:WorkflowViewState.IdRef="TryCatch_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -409,7 +402,7 @@
                 </Sequence>
               </TryCatch.Finally>
             </TryCatch>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DT_Check]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-4' ReferenceIdx='4' Name='Column-4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-5' ReferenceIdx='5' Name='Column-5'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-6' ReferenceIdx='6' Name='Column-6'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-7' ReferenceIdx='7' Name='Column-7'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Column-2' attr='fulltext' /&gt;&lt;column name='Column-3' attr='fulltext' /&gt;&lt;column name='Column-4' attr='fulltext' /&gt;&lt;column name='Column-5' attr='fulltext' /&gt;&lt;column name='Column-6' attr='fulltext' /&gt;&lt;column name='Column-7' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="760,190" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DT_Check]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-4' ReferenceIdx='4' Name='Column-4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-5' ReferenceIdx='5' Name='Column-5'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-6' ReferenceIdx='6' Name='Column-6'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-7' ReferenceIdx='7' Name='Column-7'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Column-2' attr='fulltext' /&gt;&lt;column name='Column-3' attr='fulltext' /&gt;&lt;column name='Column-4' attr='fulltext' /&gt;&lt;column name='Column-5' attr='fulltext' /&gt;&lt;column name='Column-6' attr='fulltext' /&gt;&lt;column name='Column-7' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585,194" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
               <uix:NExtractData.Target>
                 <uix:TargetAnchorable BrowserURL="https://harveynorman.messagexchange.com/forms/IntrayList.aspx?D=I&amp;defaulttp=1" DesignTimeRectangle="322, 609, 1106, 289" DesignTimeScaleFactor="1.25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='docList' tableRow='3' tag='TABLE' /&gt;" Guid="6fa7b63a-956a-4ddd-a681-c7729fb33995" InformativeScreenshot="8900e5141ff52be819a784745f6bb43e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Document In Tray' /&gt;" SearchSteps="Selector" Version="V6" />
               </uix:NExtractData.Target>
@@ -420,7 +413,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NExtractData>
-            <If Condition="[DT_Check.RowCount&gt;1]" sap:VirtualizedContainerService.HintSize="760,9069" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[DT_Check.RowCount&gt;1]" sap:VirtualizedContainerService.HintSize="585,4057" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -428,7 +421,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="758,8709" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="583,3685" sap2010:WorkflowViewState.IdRef="Sequence_59">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Name="DT_Unique_PO" />
                   </Sequence.Variables>
@@ -437,7 +430,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -488,7 +481,7 @@
                       </Sequence>
                     </TryCatch.Finally>
                   </TryCatch>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="10" DisplayName="Type Into click DIR" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="document.getElementById('SelectionCheckBox').click();[k(Tab)][k(Enter)]" Version="V5">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="10" DisplayName="Type Into click DIR" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="document.getElementById('SelectionCheckBox').click();[k(Tab)][k(Enter)]" Version="V5">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="34, 976, 1868, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Console panel' role='property page' /&gt;&lt;ctrl name='console' role='grouping' /&gt;&lt;ctrl name='Console prompt' role='editable text' /&gt;" Guid="5493da56-1023-4361-ab1b-6ad2d43445bd" InformativeScreenshot="a4eb461a99830aa107d7a5cb4da56be0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
@@ -499,7 +492,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="10" DelayBefore="10" DisplayName="Type Into Download Document" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;document.getElementById(&quot;&quot;exportAsCSVButton&quot;&quot;).click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="10" DelayBefore="10" DisplayName="Type Into Download Document" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;document.getElementById(&quot;&quot;exportAsCSVButton&quot;&quot;).click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="34, 976, 1868, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Console panel' role='property page' /&gt;&lt;ctrl name='console' role='grouping' /&gt;&lt;ctrl name='Console prompt' role='editable text' /&gt;" Guid="5493da56-1023-4361-ab1b-6ad2d43445bd" InformativeScreenshot="a4eb461a99830aa107d7a5cb4da56be0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
@@ -510,7 +503,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
                     <ui:MultipleAssign.AssignOperations>
                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -530,7 +523,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MultipleAssign>
-                  <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Path.Combine(ProjectPath,&quot;Data&quot;,&quot;ProcessedFile.csv&quot;)]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[LatestCSV_File]">
+                  <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Path.Combine(ProjectPath,&quot;Data&quot;,&quot;ProcessedFile.csv&quot;)]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[LatestCSV_File]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -538,7 +531,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MoveFile>
-                  <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DT_PO]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" PathResource="[LocalResource.FromPath(&quot;Data\\ProcessedFile.csv&quot;)]">
+                  <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DT_PO]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" PathResource="[LocalResource.FromPath(&quot;Data\\ProcessedFile.csv&quot;)]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -546,7 +539,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ReadCsvFile>
-                  <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="DeleteFolderX_2" Path="[Path.Combine(ProjectPath,&quot;Data&quot;)]" Recursive="True">
+                  <ui:DeleteFolderX DisplayName="Delete Folder" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="DeleteFolderX_2" Path="[Path.Combine(ProjectPath,&quot;Data&quot;)]" Recursive="True">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -554,7 +547,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:DeleteFolderX>
-                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="724,57" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="549,61" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -605,7 +598,7 @@
                       </Sequence>
                     </TryCatch.Finally>
                   </TryCatch>
-                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="724,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="549,153" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
                     <ui:MultipleAssign.AssignOperations>
                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
@@ -619,13 +612,13 @@
                       </scg:List>
                     </ui:MultipleAssign.AssignOperations>
                   </ui:MultipleAssign>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Unique_PO]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="724,8044" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Unique_PO]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="549,2980" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="722,7871" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547,2803" sap2010:WorkflowViewState.IdRef="Sequence_21">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="PO_Number" />
                           </Sequence.Variables>
@@ -634,7 +627,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NGoToUrl DelayBefore="5" DisplayName="Go To URL - messagexchange.com" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Url="https://harveynorman.messagexchange.com/forms/IntrayList.aspx?D=I&amp;defaulttp=1" Version="V5">
+                          <uix:NGoToUrl DelayBefore="5" DisplayName="Go To URL - messagexchange.com" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Url="https://harveynorman.messagexchange.com/forms/IntrayList.aspx?D=I&amp;defaulttp=1" Version="V5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -642,7 +635,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGoToUrl>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -662,7 +655,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:MultipleAssign>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -713,7 +706,7 @@
                               </Sequence>
                             </TryCatch.Finally>
                           </TryCatch>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into Open Form" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;const link = [[...document.querySelectorAll('a')].find(el =&gt; el.textContent.includes(&quot;&quot;&quot; + PO_Number + &quot;&quot;&quot;)); if (link) link.click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into Open Form" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;const link = [[...document.querySelectorAll('a')].find(el =&gt; el.textContent.includes(&quot;&quot;&quot; + PO_Number + &quot;&quot;&quot;)); if (link) link.click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="34, 976, 1868, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Console panel' role='property page' /&gt;&lt;ctrl name='console' role='grouping' /&gt;&lt;ctrl name='Console prompt' role='editable text' /&gt;" Guid="5493da56-1023-4361-ab1b-6ad2d43445bd" InformativeScreenshot="a4eb461a99830aa107d7a5cb4da56be0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                             </uix:NTypeInto.Target>
@@ -724,7 +717,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -775,7 +768,7 @@
                               </Sequence>
                             </TryCatch.Finally>
                           </TryCatch>
-                          <Sequence DisplayName="Unleashed Sequence" sap:VirtualizedContainerService.HintSize="688,6379" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                          <Sequence DisplayName="Unleashed Sequence" sap:VirtualizedContainerService.HintSize="513,1227" sap2010:WorkflowViewState.IdRef="Sequence_28">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="CustomerRef" />
                               <Variable x:TypeArguments="x:String" Name="Address" />
@@ -790,7 +783,7 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NGetText DisplayName="Get Text 'Order Number'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="654,139" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" TextString="[CustomerRef]" Version="V5">
+                            <uix:NGetText DisplayName="Get Text 'Order Number'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" TextString="[CustomerRef]" Version="V5">
                               <uix:NGetText.Target>
                                 <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/Forms/MXC_PO_View.aspx" DesignTimeRectangle="399, 302, 246, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='layoutTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='orderNumberTextBox' type='text' tag='INPUT' class='appnote' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8b67cd91-3612-4d02-8153-7e93fb18715b" ImageBase64="" InformativeScreenshot="61294a2a54c228c81a2f45002a7f3294.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -801,7 +794,7 @@
                                 </uix:TargetAnchorable>
                               </uix:NGetText.Target>
                             </uix:NGetText>
-                            <uix:NGetText DisplayName="Get Text 'Bill To'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="654,139" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" TextString="[Address]" Version="V5">
+                            <uix:NGetText DisplayName="Get Text 'Bill To'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,147" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" TextString="[Address]" Version="V5">
                               <uix:NGetText.Target>
                                 <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/Forms/MXC_PO_View.aspx" DesignTimeRectangle="399, 494, 1208, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='layoutTable' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='billToTextBox' type='text' tag='INPUT' class='appnote' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8af6636a-6b32-4c55-b02b-6ae5b3440585" ImageBase64="" InformativeScreenshot="4d972e56e0566e421577c767994076d8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -812,24 +805,30 @@
                                 </uix:TargetAnchorable>
                               </uix:NGetText.Target>
                             </uix:NGetText>
-                            <uix:NExtractData ExtractDataSettings="{x:Null}" AppendResults="False" ContinueOnError="True" DataTable="[ProductData]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Column-2' attr='fulltext' /&gt;&lt;column name='Column-3' attr='fulltext' /&gt;&lt;column name='Column-4' attr='fulltext' /&gt;&lt;column name='Column-5' attr='fulltext' /&gt;&lt;column name='Column-6' attr='fulltext' /&gt;&lt;column name='Column-7' attr='fulltext' /&gt;&lt;column name='Column-8' attr='fulltext' /&gt;&lt;column name='Column-9' attr='fulltext' /&gt;&lt;column name='Column-10' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="654,190" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
+                            <uix:NExtractData ExtractDataSettings="{x:Null}" AppendResults="False" ContinueOnError="True" DataTable="[ProductData]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Column-2' attr='fulltext' /&gt;&lt;column name='Column-3' attr='fulltext' /&gt;&lt;column name='Column-4' attr='fulltext' /&gt;&lt;column name='Column-5' attr='fulltext' /&gt;&lt;column name='Column-6' attr='fulltext' /&gt;&lt;column name='Column-7' attr='fulltext' /&gt;&lt;column name='Column-8' attr='fulltext' /&gt;&lt;column name='Column-9' attr='fulltext' /&gt;&lt;column name='Column-10' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
                               <uix:NExtractData.Target>
                                 <uix:TargetAnchorable BrowserURL="https://harveynorman.messagexchange.com/Forms/MXC_PO_View.aspx?ex=WZ3rt9nlQhOpXEEn0WQr1fn6vrleE1crMo2dzizK&amp;D=I&amp;SDId=28235190&amp;Id=819932065" DesignTimeRectangle="323, 641, 1284, 237" DesignTimeScaleFactor="1.25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='lineItemTable' tableRow='14' tag='TABLE' /&gt;" Guid="0edc8923-8ffd-4cfd-93ea-aeb12c25d172" InformativeScreenshot="3bb1b45c75ea220cc512f68a20b2cc76.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="Selector" Version="V6" />
                               </uix:NExtractData.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NExtractData>
-                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Create a clone to preserve structure&#xA;out_DT = in_DT.Clone()&#xA;&#xA;' Check if there are at least 3 rows to safely remove first and last two&#xA;If in_DT.Rows.Count &gt; 3 Then&#xA;    For i = 1 To in_DT.Rows.Count - 3&#xA;        out_DT.ImportRow(in_DT.Rows(i))&#xA;    Next&#xA;End If&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="654,197" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Create a clone to preserve structure&#xA;out_DT = in_DT.Clone()&#xA;&#xA;' Check if there are at least 3 rows to safely remove first and last two&#xA;If in_DT.Rows.Count &gt; 3 Then&#xA;    For i = 1 To in_DT.Rows.Count - 3&#xA;        out_DT.ImportRow(in_DT.Rows(i))&#xA;    Next&#xA;End If&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
                               <ui:InvokeCode.Arguments>
                                 <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT">[ProductData]</InArgument>
                                 <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT">[UnleashedProducts]</OutArgument>
                               </ui:InvokeCode.Arguments>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InvokeCode>
-                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="654,57" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="CommentOut_9">
                               <ui:CommentOut.Body>
                                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,341" sap2010:WorkflowViewState.IdRef="Sequence_78">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -877,7 +876,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="654,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,184" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -905,13 +904,75 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MultipleAssign>
-                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Add Sales Order(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="654,5385" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V2">
+                            <If Condition="[Address.Equals(&quot;HN Marketplace&quot;)]" DisplayName="If Direct to Customer" sap:VirtualizedContainerService.HintSize="479,414" sap2010:WorkflowViewState.IdRef="If_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Then Email MJ and skip this Order" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID1}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hey MJ! &lt;/SPAN&gt;&lt;BR/&gt;&lt;SPAN&gt;This is the Direct to Customer Order &lt;/SPAN&gt;&lt;SPAN&gt;Number &lt;/SPAN&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;SPAN&gt;, Please give it a look and Update this on unleashed, Thanks.&lt;/SPAN&gt;&lt;/P&gt;&quot;, OrderNumber)]" ConnectionId="f0d0da48-2672-41b5-acd1-d6b40d2541e9" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="True" Subject="[&quot;Direct to Customer Order &quot;+OrderNumber]" To="[New String(){&quot;marjurey@digitaldoorlocks.com.au&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+                                    <umam:SendMailConnections.AttachmentsBackup>
+                                      <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+                                        <usau:BackupSlot.BackupValues>
+                                          <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
+                                        </usau:BackupSlot.BackupValues>
+                                      </usau:BackupSlot>
+                                    </umam:SendMailConnections.AttachmentsBackup>
+                                    <umam:SendMailConnections.InputTypeBackup>
+                                      <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="HTML">
+                                        <usau:BackupSlot.BackupValues>
+                                          <scg:Dictionary x:TypeArguments="umame:BodyInputType, scg:List(x:Object)" />
+                                        </usau:BackupSlot.BackupValues>
+                                      </usau:BackupSlot>
+                                    </umam:SendMailConnections.InputTypeBackup>
+                                    <umam:SendMailConnections.MailboxArg>
+                                      <umamm:MailboxArgument SharedMailbox="{x:Null}" UseSharedMailbox="False">
+                                        <umamm:MailboxArgument.Backup>
+                                          <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" x:Name="__ReferenceID1" StoredValue="UseISMailbox">
+                                            <usau:BackupSlot.BackupValues>
+                                              <scg:List x:TypeArguments="x:Object" x:Key="NoMailbox" Capacity="1">
+                                                <x:Null />
+                                              </scg:List>
+                                            </usau:BackupSlot.BackupValues>
+                                          </usau:BackupSlot>
+                                        </umamm:MailboxArgument.Backup>
+                                      </umamm:MailboxArgument>
+                                    </umam:SendMailConnections.MailboxArg>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </umam:SendMailConnections>
+                                  <ui:Continue sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Add Sales Order(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V2">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="620,5144" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="621,4217" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="SO_Number" />
                                       <Variable x:TypeArguments="x:Boolean" Name="FileExists" />
@@ -921,7 +982,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NCheckState DisplayName="Check App State 'Don't have an account'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V4">
+                                    <uix:NCheckState DisplayName="Check App State 'Don't have an account'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V4">
                                       <uix:NCheckState.IfExists>
                                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,812.8" sap2010:WorkflowViewState.IdRef="Sequence_49">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -994,7 +1055,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NCheckState>
-                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="CommentOut_7">
                                       <ui:CommentOut.Body>
                                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,165" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1033,7 +1094,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:CommentOut>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '*Customer Code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="harvey norman" Version="V5">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '*Customer Code'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="harvey norman" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update" DesignTimeRectangle="496, 409, 225, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='INPUT' class='ui-autocomplete-input' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='*Customer Code' parentclass='editor-field  input-with-search' /&gt;" Guid="06975b57-fc08-4a75-b489-b861ff98953f" ImageBase64="" InformativeScreenshot="6c3b59eb2ff6e5e6c1c34d70dd4c584b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Add Sales Order' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -1050,7 +1111,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V5">
+                                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V5">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1058,7 +1119,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NKeyboardShortcuts>
-                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
+                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Up" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1066,7 +1127,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NMouseScroll>
-                                    <uix:NGetText DisplayName="Get Text 'SO-00021620'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" TextString="[SO_Number]" Version="V5">
+                                    <uix:NGetText DisplayName="Get Text 'SO-00021620'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" TextString="[SO_Number]" Version="V5">
                                       <uix:NGetText.Target>
                                         <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79943" CVScreenId="6e3fd82e-0f99-4c36-94be-277578d09cff" DesignTimeRectangle="334, 261, 270, 45" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='OrderNumberDisplay' tag='SPAN' aaname='SO-*' /&gt;" Guid="e7e926f2-3fd6-46a4-98f7-0fe60ec19675" ImageBase64="" InformativeScreenshot="5e13bc5252c7818959dc737708f14d31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021648' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                       </uix:NGetText.Target>
@@ -1077,7 +1138,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NGetText>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Customer Reference'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[OrderNumber.ToString]" Version="V5">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Customer Reference'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[OrderNumber.ToString]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="496, 521, 225, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='INPUT' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Customer Reference' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='editor-field' /&gt;" Guid="366c81e1-a3f1-4f64-93fc-994b3a22285c" ImageBase64="" InformativeScreenshot="087ac92eb75cad4fff74c9af250bef4d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                                           <uix:TargetAnchorable.Anchors>
@@ -1094,7 +1155,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                                       <ui:CommentOut.Body>
                                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1137,7 +1198,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:CommentOut>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Sales Person'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[&quot;MJ&quot;+&quot;[k(Enter)]&quot;]" Version="V5">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Sales Person'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[&quot;MJ&quot;+&quot;[k(Enter)]&quot;]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1551, 409, 225, 42" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='SELECT' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='style-select' /&gt;" Guid="2e7ee0b6-266d-4da0-a48f-78b183df302c" ImageBase64="" InformativeScreenshot="7389cae31eae91ea23669e1192a071ea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -1154,7 +1215,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Sales Order Group'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NTypeInto_19" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[&quot;Online/Phone&quot;+&quot;[k(Enter)]&quot;]" Version="V5">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Sales Order Group'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NTypeInto_19" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[&quot;Online/Phone&quot;+&quot;[k(Enter)]&quot;]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1551, 465, 225, 43" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='InvoiceHeaderTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='SELECT' class='valid' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='style-select' /&gt;" Guid="5759aced-e5a8-4815-ab54-edf2def93977" ImageBase64="" InformativeScreenshot="c3119a138ff679bfed614388be99c0c7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                                           <uix:TargetAnchorable.Anchors>
@@ -1171,7 +1232,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Delivery Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[DeliveryAddress.ToString.Trim + &quot;[k(Enter)]&quot;]" Version="V5">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Delivery Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[DeliveryAddress.ToString.Trim + &quot;[k(Enter)]&quot;]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1010, 465, 225, 43" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DeliveryDetailsTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl tag='SELECT' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Delivery Address' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentclass='style-select' /&gt;" Guid="5bdf95c2-98a0-4e91-8ba3-0987f583498c" ImageBase64="" InformativeScreenshot="6daa5285d3bbef55a65212fd400d1bbb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -1188,13 +1249,13 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[UnleashedProducts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,3121" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[UnleashedProducts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="587,3243" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="584,2939" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="585,3057" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:String" Name="ProductName" />
                                               <Variable x:TypeArguments="sd:DataTable" Name="FilteredDT" />
@@ -1204,7 +1265,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="550,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="551,153" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                                               <ui:MultipleAssign.AssignOperations>
                                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -1218,7 +1279,7 @@
                                                 </scg:List>
                                               </ui:MultipleAssign.AssignOperations>
                                             </ui:MultipleAssign>
-                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="550,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_11">
+                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="551,153" sap2010:WorkflowViewState.IdRef="MultipleAssign_11">
                                               <ui:MultipleAssign.AssignOperations>
                                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -1232,7 +1293,7 @@
                                                 </scg:List>
                                               </ui:MultipleAssign.AssignOperations>
                                             </ui:MultipleAssign>
-                                            <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-BLACK&quot;)]" DisplayName="If DDL709" sap:VirtualizedContainerService.HintSize="550,2581" sap2010:WorkflowViewState.IdRef="If_4">
+                                            <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-BLACK&quot;)]" DisplayName="If DDL709" sap:VirtualizedContainerService.HintSize="551,2687" sap2010:WorkflowViewState.IdRef="If_4">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1240,13 +1301,13 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                               <If.Then>
-                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="548,991" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="549,1028" sap2010:WorkflowViewState.IdRef="Sequence_67">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="514,273" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
+                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="515,277" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
                                                     <ui:MultipleAssign.AssignOperations>
                                                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
@@ -1292,11 +1353,11 @@
                                                       </scg:List>
                                                     </ui:MultipleAssign.AssignOperations>
                                                   </ui:MultipleAssign>
-                                                  <umae:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserDriveName="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" BrowserSiteUrl="{x:Null}" ColumnNames="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ItemIdBackup="{x:Reference __ReferenceID1}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntrySiteUrl="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" ConnectionId="3812e180-ef64-40cd-b8c7-34e0fe537ffa" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="514,290" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_4" ItemSelectionMode="ItemUrl" ManualEntryItemUrl="https://digitaldoorlocks-my.sharepoint.com/:x:/g/personal/sam_digitaldoorlocks_com_au/EWwW-_FBE4pBrLARLSveGdIBqsS7JX-W4usLuPahwBdIHw?e=Jn1qLN" Range="Sheet1" RangeMode="Default" ReadAs="Values" Result="[UnleashedProductsCodes]" UseConnectionService="True" WorkingWithTemplateWorkbook="False">
+                                                  <umae:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserDriveName="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" BrowserSiteUrl="{x:Null}" ColumnNames="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ItemIdBackup="{x:Reference __ReferenceID2}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntrySiteUrl="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" ConnectionId="3812e180-ef64-40cd-b8c7-34e0fe537ffa" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="515,299" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_4" ItemSelectionMode="ItemUrl" ManualEntryItemUrl="https://digitaldoorlocks-my.sharepoint.com/:x:/g/personal/sam_digitaldoorlocks_com_au/EWwW-_FBE4pBrLARLSveGdIBqsS7JX-W4usLuPahwBdIHw?e=Jn1qLN" Range="Sheet1" RangeMode="Default" ReadAs="Values" Result="[UnleashedProductsCodes]" UseConnectionService="True" WorkingWithTemplateWorkbook="False">
                                                     <umae:ReadRangeConnections.DriveItemArgument>
                                                       <umafm:DriveItemArgument BrowserDriveId="{x:Null}" BrowserDriveName="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentDriveId="{x:Null}" BrowserParentDriveName="{x:Null}" BrowserParentItemFriendlyName="{x:Null}" BrowserParentItemId="{x:Null}" BrowserParentPath="{x:Null}" BrowserSiteUrl="{x:Null}" BrowserSpecificUrl="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Item="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntrySiteUrl="{x:Null}" ReferenceId="{x:Null}" FullPathHint="" ItemSelectionMode="ItemUrl" ManualEntryItemUrl="https://digitaldoorlocks-my.sharepoint.com/:x:/g/personal/sam_digitaldoorlocks_com_au/EWwW-_FBE4pBrLARLSveGdIBqsS7JX-W4usLuPahwBdIHw?e=Jn1qLN" ParentFullPathHint="">
                                                         <umafm:DriveItemArgument.ItemIdBackup>
-                                                          <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="ItemUrl">
+                                                          <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="ItemUrl">
                                                             <usau:BackupSlot.BackupValues>
                                                               <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="6">
                                                                 <x:Null />
@@ -1323,7 +1384,7 @@
                                                       </umafm:DriveItemArgument>
                                                     </umae:ReadRangeConnections.TemplateArgument>
                                                   </umae:ReadRangeConnections>
-                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="514,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
+                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="515,153" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
                                                     <ui:MultipleAssign.AssignOperations>
                                                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
@@ -1342,7 +1403,7 @@
                                                       </scg:List>
                                                     </ui:MultipleAssign.AssignOperations>
                                                   </ui:MultipleAssign>
-                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'INPUT ProductAddLine'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,57" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[ProductName.ToString]" Version="V5">
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'INPUT ProductAddLine'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="515,61" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[ProductName.ToString]" Version="V5">
                                                     <uix:NTypeInto.Target>
                                                       <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="334, 840, 375, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl id='ProductAddLine' tableRow='4' tag='INPUT' /&gt;" Guid="5a0edaf7-5742-4120-b8fc-0ebbb91678fe" ImageBase64="" InformativeScreenshot="b246b3ac603caf60a094a8e9b8b6a343.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                                     </uix:NTypeInto.Target>
@@ -1353,7 +1414,7 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </uix:NTypeInto>
-                                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_34" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="515,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_34" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1361,7 +1422,7 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </uix:NKeyboardShortcuts>
-                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Quantity'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,57" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[CurrentRow(&quot;Column-4&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V5">
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Quantity'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="515,61" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[CurrentRow(&quot;Column-4&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V5">
                                                     <uix:NTypeInto.Target>
                                                       <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="757, 840, 100, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='addLineTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl id='QtyAddLine' matching:id='fuzzy' fuzzylevel:id='0.0' type='text' tag='INPUT' class='short number' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9699be24-1bc5-4a7b-9b86-ef4e985030ac" ImageBase64="" InformativeScreenshot="74384d9d9c83f43ba9d6a939f975fbdf.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                                                         <uix:TargetAnchorable.Anchors>
@@ -1378,7 +1439,7 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                   </uix:NTypeInto>
-                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,48" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="515,52" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
                                                     <uix:NClick.Target>
                                                       <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1790, 715, 81, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' aaname='Add' innertext='Add' /&gt;" Guid="5d88dadd-8176-4654-8a82-f79ed06a35ce" ImageBase64="" InformativeScreenshot="5d39e11ccb1a63078cd525a987f31786.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                                     </uix:NClick.Target>
@@ -1392,13 +1453,13 @@
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="548,1460" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="549,1525" sap2010:WorkflowViewState.IdRef="Sequence_68">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-COPPER&quot;)]" sap:VirtualizedContainerService.HintSize="514,1400" sap2010:WorkflowViewState.IdRef="If_7">
+                                                  <If Condition="[ProductName.ToUpper.Equals(&quot;DDL709-7HWS-COPPER&quot;)]" sap:VirtualizedContainerService.HintSize="515,1461" sap2010:WorkflowViewState.IdRef="If_7">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1406,13 +1467,13 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                     <If.Then>
-                                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,991" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="513,1028" sap2010:WorkflowViewState.IdRef="Sequence_73">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,273" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
+                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,277" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
                                                           <ui:MultipleAssign.AssignOperations>
                                                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
@@ -1458,11 +1519,11 @@
                                                             </scg:List>
                                                           </ui:MultipleAssign.AssignOperations>
                                                         </ui:MultipleAssign>
-                                                        <umae:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserDriveName="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" BrowserSiteUrl="{x:Null}" ColumnNames="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ItemIdBackup="{x:Reference __ReferenceID2}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntrySiteUrl="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" ConnectionId="3812e180-ef64-40cd-b8c7-34e0fe537ffa" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="478,290" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_2" ItemSelectionMode="ItemUrl" ManualEntryItemUrl="https://digitaldoorlocks-my.sharepoint.com/:x:/g/personal/sam_digitaldoorlocks_com_au/EWwW-_FBE4pBrLARLSveGdIBqsS7JX-W4usLuPahwBdIHw?e=Jn1qLN" Range="Sheet1" RangeMode="Default" ReadAs="Values" Result="[UnleashedProductsCodes]" UseConnectionService="True" WorkingWithTemplateWorkbook="False">
+                                                        <umae:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserDriveName="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" BrowserSiteUrl="{x:Null}" ColumnNames="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ItemIdBackup="{x:Reference __ReferenceID3}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntrySiteUrl="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" ConnectionId="3812e180-ef64-40cd-b8c7-34e0fe537ffa" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="479,299" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_2" ItemSelectionMode="ItemUrl" ManualEntryItemUrl="https://digitaldoorlocks-my.sharepoint.com/:x:/g/personal/sam_digitaldoorlocks_com_au/EWwW-_FBE4pBrLARLSveGdIBqsS7JX-W4usLuPahwBdIHw?e=Jn1qLN" Range="Sheet1" RangeMode="Default" ReadAs="Values" Result="[UnleashedProductsCodes]" UseConnectionService="True" WorkingWithTemplateWorkbook="False">
                                                           <umae:ReadRangeConnections.DriveItemArgument>
                                                             <umafm:DriveItemArgument BrowserDriveId="{x:Null}" BrowserDriveName="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentDriveId="{x:Null}" BrowserParentDriveName="{x:Null}" BrowserParentItemFriendlyName="{x:Null}" BrowserParentItemId="{x:Null}" BrowserParentPath="{x:Null}" BrowserSiteUrl="{x:Null}" BrowserSpecificUrl="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Item="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntrySiteUrl="{x:Null}" ReferenceId="{x:Null}" FullPathHint="" ItemSelectionMode="ItemUrl" ManualEntryItemUrl="https://digitaldoorlocks-my.sharepoint.com/:x:/g/personal/sam_digitaldoorlocks_com_au/EWwW-_FBE4pBrLARLSveGdIBqsS7JX-W4usLuPahwBdIHw?e=Jn1qLN" ParentFullPathHint="">
                                                               <umafm:DriveItemArgument.ItemIdBackup>
-                                                                <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="ItemUrl">
+                                                                <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="ItemUrl">
                                                                   <usau:BackupSlot.BackupValues>
                                                                     <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="6">
                                                                       <x:Null />
@@ -1489,7 +1550,7 @@
                                                             </umafm:DriveItemArgument>
                                                           </umae:ReadRangeConnections.TemplateArgument>
                                                         </umae:ReadRangeConnections>
-                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
+                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,153" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
                                                           <ui:MultipleAssign.AssignOperations>
                                                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_27">
@@ -1508,7 +1569,7 @@
                                                             </scg:List>
                                                           </ui:MultipleAssign.AssignOperations>
                                                         </ui:MultipleAssign>
-                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'INPUT ProductAddLine'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="NTypeInto_32" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[ProductName.ToString]" Version="V5">
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'INPUT ProductAddLine'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NTypeInto_32" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[ProductName.ToString]" Version="V5">
                                                           <uix:NTypeInto.Target>
                                                             <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="334, 840, 375, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl id='ProductAddLine' tableRow='4' tag='INPUT' /&gt;" Guid="5a0edaf7-5742-4120-b8fc-0ebbb91678fe" ImageBase64="" InformativeScreenshot="b246b3ac603caf60a094a8e9b8b6a343.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                                           </uix:NTypeInto.Target>
@@ -1519,7 +1580,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uix:NTypeInto>
-                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_35" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_35" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1527,7 +1588,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uix:NKeyboardShortcuts>
-                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Quantity'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="NTypeInto_33" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[CurrentRow(&quot;Column-4&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V5">
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Quantity'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NTypeInto_33" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[CurrentRow(&quot;Column-4&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V5">
                                                           <uix:NTypeInto.Target>
                                                             <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="757, 840, 100, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='addLineTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl id='QtyAddLine' matching:id='fuzzy' fuzzylevel:id='0.0' type='text' tag='INPUT' class='short number' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9699be24-1bc5-4a7b-9b86-ef4e985030ac" ImageBase64="" InformativeScreenshot="74384d9d9c83f43ba9d6a939f975fbdf.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                                                               <uix:TargetAnchorable.Anchors>
@@ -1544,7 +1605,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uix:NTypeInto>
-                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,48" sap2010:WorkflowViewState.IdRef="NClick_44" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
+                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="NClick_44" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
                                                           <uix:NClick.Target>
                                                             <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1790, 715, 81, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' aaname='Add' innertext='Add' /&gt;" Guid="5d88dadd-8176-4654-8a82-f79ed06a35ce" ImageBase64="" InformativeScreenshot="5d39e11ccb1a63078cd525a987f31786.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                                           </uix:NClick.Target>
@@ -1558,13 +1619,13 @@
                                                       </Sequence>
                                                     </If.Then>
                                                     <If.Else>
-                                                      <Sequence DisplayName="Else simple products" sap:VirtualizedContainerService.HintSize="512,279" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                                                      <Sequence DisplayName="Else simple products" sap:VirtualizedContainerService.HintSize="513,299" sap2010:WorkflowViewState.IdRef="Sequence_74">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'INPUT ProductAddLine'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[ProductName.ToString]" Version="V5">
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'INPUT ProductAddLine'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[ProductName.ToString]" Version="V5">
                                                           <uix:NTypeInto.Target>
                                                             <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="334, 840, 375, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl id='ProductAddLine' tableRow='4' tag='INPUT' /&gt;" Guid="5a0edaf7-5742-4120-b8fc-0ebbb91678fe" ImageBase64="" InformativeScreenshot="b246b3ac603caf60a094a8e9b8b6a343.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                                           </uix:NTypeInto.Target>
@@ -1575,7 +1636,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uix:NTypeInto>
-                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_32" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_32" InteractionMode="HardwareEvents" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1583,7 +1644,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uix:NKeyboardShortcuts>
-                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Quantity'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,57" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[CurrentRow(&quot;Column-4&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V5">
+                                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into 'Quantity'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Text="[CurrentRow(&quot;Column-4&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V5">
                                                           <uix:NTypeInto.Target>
                                                             <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="757, 840, 100, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='addLineTable' matching:id='fuzzy' fuzzylevel:id='0.0' tag='TABLE' /&gt;&lt;webctrl id='QtyAddLine' matching:id='fuzzy' fuzzylevel:id='0.0' type='text' tag='INPUT' class='short number' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9699be24-1bc5-4a7b-9b86-ef4e985030ac" ImageBase64="" InformativeScreenshot="74384d9d9c83f43ba9d6a939f975fbdf.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
                                                               <uix:TargetAnchorable.Anchors>
@@ -1600,7 +1661,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uix:NTypeInto>
-                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,48" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
+                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
                                                           <uix:NClick.Target>
                                                             <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1790, 715, 81, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='addLineTable' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' aaname='Add' innertext='Add' /&gt;" Guid="5d88dadd-8176-4654-8a82-f79ed06a35ce" ImageBase64="" InformativeScreenshot="5d39e11ccb1a63078cd525a987f31786.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                                           </uix:NClick.Target>
@@ -1627,34 +1688,60 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:ForEachRow>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="586,190" sap2010:WorkflowViewState.IdRef="NClick_31" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="NClick_31" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bcb881f-4833-4e89-b7e5-5e9bbe47cf7c" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="au.unleashedsoftware.com/v2/SalesOrder/Update/79876" DesignTimeRectangle="1642, 295, 76, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='A' aaname='Save' innertext='Save' /&gt;" Guid="bc440273-cf52-4550-b3ad-b4b212e8191c" ImageBase64="" InformativeScreenshot="e8f89f0abb14d572eec078c4be956c68.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SO-00021614' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                                       </uix:NClick.Target>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                     </uix:NClick>
-                                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{OrderNumber,SO_Number,&quot;NEW&quot;}]" DataTable="[DT_Processed]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="586,221" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-                                    <ui:FileExistsX DisplayName="File Exists" Exists="[FileExists]" sap:VirtualizedContainerService.HintSize="586,167" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[Path.combine(ProjectPath,&quot;Processed PO Numbers.xlsx&quot;)]" />
-                                    <If Condition="[FileExists]" sap:VirtualizedContainerService.HintSize="586,756" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{OrderNumber,SO_Number,&quot;NEW&quot;}]" DataTable="[DT_Processed]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:AddDataRow>
+                                    <ui:FileExistsX DisplayName="File Exists" Exists="[FileExists]" sap:VirtualizedContainerService.HintSize="587,61" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[Path.combine(ProjectPath,&quot;Processed PO Numbers.xlsx&quot;)]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:FileExistsX>
+                                    <If Condition="[FileExists]" sap:VirtualizedContainerService.HintSize="587,54" sap2010:WorkflowViewState.IdRef="If_1">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,312" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,324" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[DT_Processed]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="AppendRange_2" SheetName="Sheet1" WorkbookPath="[Path.Combine(ProjectPath,&quot;Processed PO Numbers.xlsx&quot;)]" />
-                                          <ui:ClearDataTable DataTable="[DT_Processed]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
+                                          <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[DT_Processed]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="416,152" sap2010:WorkflowViewState.IdRef="AppendRange_2" SheetName="Sheet1" WorkbookPath="[Path.Combine(ProjectPath,&quot;Processed PO Numbers.xlsx&quot;)]" />
+                                          <ui:ClearDataTable DataTable="[DT_Processed]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,312" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,324" sap2010:WorkflowViewState.IdRef="Sequence_48">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[DT_Processed]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[Path.Combine(ProjectPath,&quot;Processed PO Numbers.xlsx&quot;)]" />
-                                          <ui:ClearDataTable DataTable="[DT_Processed]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_2" />
+                                          <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[DT_Processed]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,152" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[Path.Combine(ProjectPath,&quot;Processed PO Numbers.xlsx&quot;)]" />
+                                          <ui:ClearDataTable DataTable="[DT_Processed]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="ClearDataTable_2" />
                                         </Sequence>
                                       </If.Else>
                                     </If>
@@ -1666,13 +1753,13 @@
                               </uix:NApplicationCard.TargetApp>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NApplicationCard>
                           </Sequence>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1723,7 +1810,7 @@
                               </Sequence>
                             </TryCatch.Finally>
                           </TryCatch>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into Turn Around" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="NTypeInto_24" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;document.getElementById(&quot;&quot;turnAroundButton2&quot;&quot;).click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="5" DisplayName="Type Into Turn Around" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="NTypeInto_24" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;document.getElementById(&quot;&quot;turnAroundButton2&quot;&quot;).click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="34, 976, 1868, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Console panel' role='property page' /&gt;&lt;ctrl name='console' role='grouping' /&gt;&lt;ctrl name='Console prompt' role='editable text' /&gt;" Guid="5493da56-1023-4361-ab1b-6ad2d43445bd" InformativeScreenshot="a4eb461a99830aa107d7a5cb4da56be0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                             </uix:NTypeInto.Target>
@@ -1734,7 +1821,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1785,7 +1872,7 @@
                               </Sequence>
                             </TryCatch.Finally>
                           </TryCatch>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Version="V5">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/Forms/Turnaround.aspx" DesignTimeRectangle="714, 669, 52, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='PayloadTable' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' aaname='Create' /&gt;" Guid="78ffe695-1de1-450b-bbbf-45d6688840be" ImageBase64="" InformativeScreenshot="83b21d36c7bfed5544b3c68725a13b16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Turn around Document' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                             </uix:NClick.Target>
@@ -1796,7 +1883,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NClick>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT EstimatedDispatch…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="688,251" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[Now.AddDays(2).ToString(&quot;yyyy-MM-dd&quot;)]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT EstimatedDispatch…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513,259" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[Now.AddDays(2).ToString(&quot;yyyy-MM-dd&quot;)]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/Forms/MXC_POR_BK.aspx" DesignTimeRectangle="536, 511, 212, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='layoutTable' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' class='hasDatepicker' parentclass='appquestion' /&gt;" Guid="8aba8f71-2fd8-44da-8e06-f0ea8682b301" ImageBase64="" InformativeScreenshot="0da4f5e6ff2a5ca9b1572eb337065821.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Harvey Norman - Forms - Forms Input' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                             </uix:NTypeInto.Target>
@@ -1807,7 +1894,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_16" InteractionMode="SameAsCard" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_16" InteractionMode="SameAsCard" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1815,8 +1902,8 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NKeyboardShortcuts>
-                          <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="688,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                          <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="513,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="CommentOut_8">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_77">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -1841,7 +1928,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="5" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="688,212" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_31" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="5" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="513,220" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_31" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1849,7 +1936,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NKeyboardShortcuts>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1900,7 +1987,7 @@
                               </Sequence>
                             </TryCatch.Finally>
                           </TryCatch>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="5" DelayBefore="5" DisplayName="Type Into Send Order response" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="NTypeInto_25" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;document.getElementById(&quot;&quot;SendButton2&quot;&quot;).click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="5" DelayBefore="5" DisplayName="Type Into Send Order response" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="NTypeInto_25" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Text="[&quot;document.getElementById(&quot;&quot;SendButton2&quot;&quot;).click();[k(Tab)][k(Enter)]&quot;]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="harveynorman.messagexchange.com/forms/IntrayList.aspx" DesignTimeRectangle="34, 976, 1868, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Console panel' role='property page' /&gt;&lt;ctrl name='console' role='grouping' /&gt;&lt;ctrl name='Console prompt' role='editable text' /&gt;" Guid="5493da56-1023-4361-ab1b-6ad2d43445bd" InformativeScreenshot="a4eb461a99830aa107d7a5cb4da56be0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Harvey Norman - Forms - Document In Tray - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                             </uix:NTypeInto.Target>
@@ -1911,7 +1998,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="688,57" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="513,61" sap2010:WorkflowViewState.IdRef="TryCatch_8">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1962,7 +2049,7 @@
                               </Sequence>
                             </TryCatch.Finally>
                           </TryCatch>
-                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="5" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="688,48" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_26" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="5" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="513,52" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_26" InteractionMode="HardwareEvents" ScopeIdentifier="7a423d07-d1d9-432d-a9bb-5c8197652ca2" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1983,13 +2070,13 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="758,228" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="583,236" sap2010:WorkflowViewState.IdRef="Sequence_60">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="724,168" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;No Reference Numbers With &quot;&quot;New&quot;&quot; Status Available&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="549,172" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;No Reference Numbers With &quot;&quot;New&quot;&quot; Status Available&quot;]" />
                 </Sequence>
               </If.Else>
             </If>
@@ -2006,13 +2093,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="828,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Starting Add ASN Workflow&quot;]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ADD ASN - Invoke Workflow File (ADD ASN.xaml)" sap:VirtualizedContainerService.HintSize="828,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ADD ASN.xaml">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="653,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Starting Add ASN Workflow&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ADD ASN - Invoke Workflow File (ADD ASN.xaml)" sap:VirtualizedContainerService.HintSize="653,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ADD ASN.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="countUpdateRoiDashboard - Invoke Workflow File (countUpdateRoiDashboard.xaml)" sap:VirtualizedContainerService.HintSize="828,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="countUpdateRoiDashboard.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="countUpdateRoiDashboard - Invoke Workflow File (countUpdateRoiDashboard.xaml)" sap:VirtualizedContainerService.HintSize="653,173" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="countUpdateRoiDashboard.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="TaskName" />
       </ui:InvokeWorkflowFile.Arguments>
